@@ -1,0 +1,199 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
+}
+
+#back_arrow{
+	position: fixed;
+	transform: rotate(90deg);
+	left: 50px;
+	top:50px;
+	cursor: pointer;
+}
+
+section.step-box{
+	width:100vw;
+	height: 100vh;
+	background:white;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	display: grid;
+	grid-auto-flow: row;
+	justify-content: center;
+}
+
+
+a{
+	color: gray;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+}
+
+h2{
+	font-weight: 100;
+}
+
+h3{
+	font-weight: 100;
+	font-size: 0.7em;
+	margin: 0;
+	font-weight: 500;
+}
+
+button{
+	background: black;
+	text-transform: uppercase;
+	border: 0;
+	color: white;
+	font-size: 0.7em;
+	padding: 20px 50px;
+	cursor: pointer;
+}
+
+#step_2 button{
+	padding: 20px 100px;
+}
+
+p{
+	font-size: 0.7em;
+}
+
+#step_4 p{
+	font-size: 0.4em;
+	margin: 5px 0px;
+}
+
+a.back-btn{
+	font-size: 0.7em;
+	display: inline-block;
+	text-transform: uppercase;
+	
+}
+
+#calendar{
+	display: grid;
+	grid-template:
+	"left_arrow month month month month month right_arrow"
+	"sun mon tue wed thu fri sat"
+	/ 50px 50px 50px 50px 50px 50px 50px;
+	grid-auto-flow: row;
+	grid-gap: 10px;
+	font-weight: bold;
+	justify-content: center;
+}
+
+.cal-arrow__left{
+	grid-area: left_arrow;
+	border-bottom: 1px solid gray;
+	cursor: pointer;
+}
+
+.cal-arrow__right{
+	grid-area: right_arrow;
+	border-bottom: 1px solid gray;
+	cursor: pointer;
+}
+
+.cal-month{
+	grid-area: month;
+	border-bottom: 1px solid gray;
+}
+
+.cal-week{
+
+}
+
+.cal-week.sun{
+	grid-area: sun;
+}
+
+.cal-week.mon{
+	grid-area: mon;
+}
+
+.cal-week.tue{
+	grid-area: tue;
+}
+
+.cal-week.wed{
+	grid-area: wed;
+}
+
+.cal-week.thu{
+	grid-area: thu;
+}
+
+.cal-week.fri{
+	grid-area: fri;
+}
+
+.cal-week.sat{
+	grid-area: sat;
+}
+
+.cal-date{
+	font-weight: 100;
+	cursor: pointer;
+}
+
+.cal-date.active{
+	background:black;
+	color: white;
+	border-radius: 4px;
+}
+
+.cal-date.off{
+	color: lightgray;
+}
+
+.picker{
+	display: inline-grid;
+	grid-template:
+	"value metric up"
+	"value metric down"
+	/ 50px 20px 50px
+	; 
+	justify-content: center;
+	border: 1px solid gray;
+	border-radius: 10px;
+
+	height: 80px;
+}
+
+.picker >.value{
+	grid-area: value;
+	line-height: 80px;
+}
+
+.picker > .metric{
+	grid-area: metric;
+	line-height: 80px;
+}
+
+.picker > .btn-up > img{
+	grid-area: up;
+	transform: rotate(180deg);
+}
+
+.picker > .btn-down > img{
+	grid-area: down;
+}
+
+#step_1{
+	display: ;
+}
+
+#step_2{
+	display: none;
+}
+
+#step_3{
+	display: none;
+}
+
+#step_4{
+	display: none;
+}
